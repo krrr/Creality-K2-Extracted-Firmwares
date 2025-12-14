@@ -1,0 +1,10 @@
+Package: em_detection
+Version: 53734d7
+Depends: libc, librt, libpthread, libpthread, librt, libstdcpp6, opencv
+Source: /data/112052/code/SDK/kl_C4408_V2/openwrt/package/creality/em_detection
+SourceName: em_detection
+Section: creality
+SourceDateEpoch: 1716829383
+Architecture: arm_cortex-a7_neon
+Installed-Size: 52261
+Description:  em_detection
