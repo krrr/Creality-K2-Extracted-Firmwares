@@ -454,15 +454,15 @@ Architecture: arm_cortex-a7_neon
 Installed-Time: 1750325216
 
 Package: ncnn_yolov5
-Version: 2e28a22
-Depends: libc, librt, libpthread, libpthread, librt, libstdcpp6, zlib, libjpeg, libfreetype, opencv, libjson-c5, libcurl4
+Version: d2b3a94
+Depends: libc, librt, libpthread, libpthread, librt, libstdcpp6, zlib, libjpeg, libfreetype, opencv, libjson-c5, libcurl4, minizip
 Status: install user installed
 Architecture: arm_cortex-a7_neon
 Installed-Time: 1750325216
 Auto-Installed: yes
 
 Package: base-files
-Version: 4-r0-9bc92e111
+Version: 4-r0-d4dc8d146
 Depends: libc, librt, libpthread, netifd, procd, jsonfilter, fstools, fwtool
 Status: install user installed
 Architecture: arm_cortex-a7_neon
@@ -647,8 +647,8 @@ Installed-Time: 1750325216
 Auto-Installed: yes
 
 Package: libhv
-Version: v1.3.0
-Depends: libc, librt, libpthread, libstdcpp6
+Version: v1.3.3
+Depends: libc, librt, libpthread, libstdcpp6, libopenssl1.1
 Status: install user installed
 Architecture: arm_cortex-a7_neon
 Installed-Time: 1750325216
@@ -973,6 +973,14 @@ Auto-Installed: yes
 Package: libshm
 Version: 5da1166
 Depends: libc, librt, libpthread
+Status: install user installed
+Architecture: arm_cortex-a7_neon
+Installed-Time: 1750325216
+Auto-Installed: yes
+
+Package: minizip
+Version: 4.0.10-2
+Depends: libc, librt, libpthread, zlib
 Status: install user installed
 Architecture: arm_cortex-a7_neon
 Installed-Time: 1750325216
@@ -1717,7 +1725,7 @@ Installed-Time: 1750325216
 Auto-Installed: yes
 
 Package: klipper
-Version: 0a3cf69
+Version: 6a6eb3d
 Depends: libc, librt, libpthread, python3, python3-setuptools, calc_psd
 Status: install user installed
 Architecture: arm_cortex-a7_neon
@@ -1803,7 +1811,7 @@ Architecture: arm_cortex-a7_neon
 Installed-Time: 1750325216
 
 Package: lvgl_klipper
-Version: 2836131
+Version: 10aa287
 Depends: libc, librt, libpthread, libcrlog, aliyun-oss-cpp-sdk, libapr, libaprutil, libatomic1, libffmpeg-full, libblobmsg-json20210516, libopenssl1.1, libcurl4, libfreetype, libhv, libinotifytools, libjpeg, libjson-c5, jsoncpp, mxml, libpng, paho-mqtt-c, libprotobuf-c, libqrencode, libstdcpp6, libubox20210516, libubus20210630, libuuid1, wifimanager-v2.0-lib, libcxcloud
 Status: install user installed
 Architecture: arm_cortex-a7_neon

@@ -54,15 +54,33 @@ class Zalign:
         self.z_align_force_stop = None
         self.force_stop_flag = False
         self.is_already_zodwn = False
+        self.endstop_pin_status = []
         webhooks = self.printer.lookup_object('webhooks')
         webhooks.register_endpoint("zdown_force_stop", self.zdown_force_stop)
         self.real_zmax_path = os.path.join(base_dir, "creality/userdata/config/real_zmax.json")
+        buttons = self.printer.load_object(config, 'buttons')
+        buttons.register_buttons(self.endstop_pin_z, self._button_handler)
+        self.pin_len = min(len(self.endstop_pin_z), 8)
+        
+    def get_switch_states(self, state):
+        return [1 if (state & (1 << i)) == 0 else 0 for i in range(self.pin_len)]
+    def _button_handler(self, eventtime, state):
+        get_state = self.get_switch_states(state)
+        for i, val in enumerate(get_state):
+            if val != self.endstop_pin_status[i]:
+                if val == 1:
+                    self.gcode.respond_info("z%s Photoelectric switch triggered" % (i+1))
+                else:
+                    self.gcode.respond_info("z%s Photoelectric switch not triggered" % (i+1))
+        self.endstop_pin_status = get_state
     def zdown_force_stop(self, web_request):
         self.force_stop_flag = True
         self.gcode.respond_info("zdown_force_stop start")
         self.z_align_force_stop.send([self.oidz])
         self.gcode.respond_info("zdown_force_stop end")
         web_request.send({"result": "success"})
+    def get_status(self, eventtime=None):
+        return {"endstop_pin_status": self.endstop_pin_status}
     def _build_config(self):  
         config_z_align = "config_z_align oid=%d"%self.oidz
         logging.info(config_z_align)
@@ -80,6 +98,8 @@ class Zalign:
             logging.info("[stepper_indx_z=%d] config_z_align_add oid=%d z_indx=%d zs_pin=%s zd_pin=%s zd_up=%d zes_pin=%s zes_untrig=%d" % (
                 stepper_indx_z, self.oidz, stepper_indx_z, step_pin_z, dir_pin_z, self.zd_up, endstop_pin, self.zes_untrig))
         self.z_align_force_stop = self.mcu.lookup_command("z_align_force_stop oid=%c", cq=None)
+        for _ in range(len(self.endstop_pin_z)):
+            self.endstop_pin_status.append(0)
     def get_real_zmax_path(self):
         return self.real_zmax_path
     def cmd_ZDOWN_FORCE_STOP(self, gcmd):

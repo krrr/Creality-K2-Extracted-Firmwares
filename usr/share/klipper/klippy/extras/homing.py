@@ -167,6 +167,11 @@ class HomingMove:
             if error is None:
                 error = str(e)
         if error is not None:
+            error_data = json.loads(error.replace("'", '"'))
+            if error_data.get("values") == "probe":
+                gcode = self.printer.lookup_object('gcode')
+                gcode.run_script_from_command("Z_FAIL_PROTECT_HOTBED")
+                logging.info("Homing move end, error:%s" % error)
             raise self.printer.command_error(error)
         return trigpos
     def check_no_movement(self):
@@ -368,7 +373,7 @@ class PrinterHoming:
 
     def cmd_G28(self, gcmd):
         # leave flush area
-        if self.printer.lookup_object('box').has_flushing_sign():
+        if self.printer.lookup_object('box', None) and self.printer.lookup_object('box').has_flushing_sign():
             self.run_gcmd('LEAVE_FLUSH_AREA')
         # Move to origin
         axes = []
@@ -404,7 +409,7 @@ class PrinterHoming:
                             z_align.force_stop_flag = False
                             gcode.respond_info("is_already_zodwn:%s zdown_switch_enable:%s" % (z_align.is_already_zodwn, z_align.zdown_switch_enable))
                             # 检测到没有做过下光电归位时,强制做一次下光电归位
-                            if z_align.is_already_zodwn==False:
+                            if z_align.is_already_zodwn==False and z_align.pin_len != 1:
                                 gcode.run_script_from_command("SET_VELOCITY_LIMIT ACCEL=300")
                                 ret = self.run_G28_two_Z()
                                 if ret == MOTOR_PROTECT_ERROR:

@@ -277,13 +277,15 @@ class PrinterExtruder:
             print_stats = self.printer.lookup_object('print_stats')
             m = """{"code":"key111", "msg": "Extrude below minimum temp, See the 'min_extrude_temp' config option for details", "values": []}"""
             if print_stats.state == "printing" and self.extrude_below_min_temp_err_is_report==False:
-                gcode._respond_error(m)
+                # gcode._respond_error(m)
+                self.printer.command_warning(m)
                 self.extrude_below_min_temp_err_is_report = True
                 gcode.respond_info("state:%s pause_start:%s" % (self.printer.lookup_object('print_stats').state, self.printer.lookup_object('pause_resume').pause_start))
                 if self.printer.lookup_object('print_stats').state == "printing" and self.printer.lookup_object('pause_resume').pause_start == False:
                     self.printer.lookup_object('gcode').run_script_from_command("PAUSE")
             elif print_stats.state == "standby":
-                gcode._respond_error(m)
+                # gcode._respond_error(m)
+                self.printer.command_warning(m)
             return
         if (not move.axes_d[0] and not move.axes_d[1]) or axis_r < 0.:
             # Extrude only move (or retraction move) - limit accel and velocity
@@ -342,7 +344,8 @@ class PrinterExtruder:
             if extruder is None:
                 if temp <= 0.:
                     return
-                raise gcmd.error("""{"code":"key113", "msg": "Extruder not configured", "values": []}""")
+                #raise gcmd.error("""{"code":"key113", "msg": "Extruder not configured", "values": []}""")
+                return gcmd.warning("""!{"code":"key113", "msg": "Extruder not configured", "values": []}""")
         else:
             extruder = self.printer.lookup_object('toolhead').get_extruder()
         pheaters = self.printer.lookup_object('heaters')
