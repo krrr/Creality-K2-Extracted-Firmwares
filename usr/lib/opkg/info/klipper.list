@@ -15,6 +15,7 @@
 /usr/share/klippy-env/lib/python3.9/site-packages/wheel/test/headers.dist/headersdist.pyc
 /usr/share/klippy-env/lib/python3.9/distutils/__init__.py
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/utils/hashes.py
+/usr/share/klipper/gcodes/PF027/Crealitylogo_PLA_32m41s.gcode
 /usr/share/klipper/klippy/chelper/kin_winch.c
 /usr/share/klipper/test/klippy/manual_stepper.test
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/distlib/compat.pyc
@@ -137,6 +138,7 @@
 /usr/share/klipper/klippy/extras/prtouch_v2.pyc
 /usr/share/klipper/klippy/configfile.py
 /usr/share/klipper/config/example-cartesian.cfg
+/usr/share/klipper/fw/F008/motor/mot1_023_C30-mot2_002_077.bin
 /usr/share/klipper/test/klippy/commands.test
 /usr/share/klippy-env/lib/python3.9/site-packages/pkg_resources/_vendor/pyparsing.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/wrapt-1.12.1.dist-info/top_level.txt
@@ -183,7 +185,6 @@
 /usr/share/klipper/klippy/extras/pulse_counter.pyc
 /usr/share/klipper/scripts/install-centos.sh
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/html5lib/serializer.pyc
-/usr/share/klipper/fw/F008/motor/mot2_023_C30-mot2_002_071.bin
 /usr/share/klipper/klippy/extras/endstop_phase.py
 /usr/share/klipper/scripts/klipper-start.sh
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/urllib3/filepost.pyc
@@ -222,6 +223,7 @@
 /usr/share/klipper/klippy/extras/pid_calibrate.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/cachecontrol/filewrapper.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/colorama/initialise.py
+/usr/share/klipper/config/PF027_CR0CN250701C10/printer.cfg
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/commands/hash.py
 /usr/share/klippy-env/lib/python3.9/site-packages/setuptools/command/egg_info.py
 /usr/share/klipper/config/F021_CR0CN200400C10/printer.cfg
@@ -239,6 +241,7 @@
 /usr/share/klipper/fw/K1/mcu0_110_G32-mcu0_004_000.bin
 /usr/share/klipper/klippy/extras/box_wrapper.cpython-39.so
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/lockfile/linklockfile.py
+/usr/share/klipper/fw/F008/mot0_022_C30-mot2_002_077.bin
 /usr/share/klipper/test/klippy/manual_stepper.cfg
 /usr/share/klippy-env/lib/python3.9/site-packages/setuptools-28.8.0.dist-info/WHEEL
 /usr/share/klipper/config/example-corexy.cfg
@@ -284,7 +287,6 @@
 /usr/share/klippy-env/bin/easy_install-3.9
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/webencodings/x_user_defined.py
 /usr/share/klipper/config/printer-wanhao-duplicator-i3-mini-2017.cfg
-/usr/share/klipper/fw/F008/mot1_022_C30-mot2_002_071.bin
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/chardet/sbcharsetprober.py
 /usr/share/klipper/klippy/extras/heaters.py
 /usr/share/klipper/klippy/extras/hx711s.py
@@ -334,6 +336,7 @@
 /usr/share/klipper/config/K1_CR4CU220812S12/factory_printer.cfg
 /usr/share/klippy-env/lib/python3.9/site-packages/pkg_resources/_vendor/six.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/setuptools/command/build_ext.py
+/usr/share/klipper/config/PF027_CR0CN250701C10/printer_params.cfg
 /usr/share/klipper/config/generic-mellow-fly-gemini-v2.cfg
 /usr/share/klipper/klippy/kinematics/hybrid_corexy.py
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/exceptions.py
@@ -384,7 +387,6 @@
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/chardet/escprober.py
 /usr/share/klipper/README.md
 /usr/share/klipper/config/generic-bigtreetech-skr-e3-turbo.cfg
-/usr/share/klipper/fw/F008/motor/mot0_021_C30-mot2_002_071.bin
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/operations/__init__.pyc
 /usr/share/klipper/config/example.cfg
 /usr/share/klipper/klippy/kinematics/deltesian.py
@@ -440,6 +442,7 @@
 /usr/share/klipper/klippy/chelper/kin_shaper.c
 /usr/share/klipper/test/klippy/gcode_arcs.test
 /usr/share/klippy-env/bin/activate
+/usr/share/klipper/config/PF027_CR0CN250701C10/box.cfg
 /usr/share/klipper/klippy/kinematics/winch.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/cachecontrol/serialize.pyc
 /usr/share/klipper/klippy/extras/custom_macro.pyc
@@ -489,6 +492,7 @@
 /usr/share/klipper/klippy/console.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/__init__.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/urllib3/request.pyc
+/usr/share/klipper/fw/F008/motor/mot0_023_C30-mot2_002_077.bin
 /usr/share/klipper/klippy/extras/skew_correction.py
 /usr/share/klipper/test/klippy/bltouch.test
 /usr/share/klipper/config/GS_03_CR0CN240319C13/factory_printer.cfg
@@ -536,7 +540,6 @@
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/chardet/euckrfreq.py
 /usr/share/klipper/klippy/kinematics/cartesian.py
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/utils/packaging.pyc
-/usr/share/klipper/fw/F008/motor/mot1_023_C30-mot2_002_071.bin
 /usr/share/klipper/klippy/extras/gcode_arcs.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/html5lib/_inputstream.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/distlib/t64.exe
@@ -645,7 +648,6 @@
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/cachecontrol/heuristics.py
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/cachecontrol/adapter.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/wheel/egg2wheel.py
-/usr/share/klipper/fw/F008/mot0_022_C30-mot2_002_071.bin
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/urllib3/filepost.py
 /usr/share/klipper/config/F012_CR0CN200400C10/printer_params.cfg
 /usr/share/klipper/klippy/kinematics/corexz.py
@@ -702,6 +704,7 @@
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/distlib/_backport/misc.pyc
 /usr/share/klipper/config/sample-raspberry-pi.cfg
+/usr/share/klipper/gcodes/PF027/3DBench_PLA_21m47s.gcode
 /usr/share/klipper/config/K1_MAX_SE_CR4CU220812S12/printer.cfg
 /usr/share/klipper/config/generic-archim2.cfg
 /usr/share/klipper/config/generic-bigtreetech-manta-m8p.cfg
@@ -821,6 +824,7 @@
 /usr/share/klipper/klippy/chelper/trapq.c
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/html5lib/treeadapters/sax.py
 /usr/share/klipper/docs/img/trapezoid.svg
+/usr/share/klipper/gcodes/PF027/3DBenchy_PLA_34m1s.gcode
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/compat/dictconfig.py
 /usr/share/klipper/docs/img/bed_screws.svg.png
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/structures.pyc
@@ -884,7 +888,6 @@
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/html5lib/filters/alphabeticalattributes.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/urllib3/poolmanager.pyc
 /usr/share/klipper/config/generic-bigtreetech-skr-mini-e3-v2.0.cfg
-/usr/share/klipper/fw/cfs/cfs0_050_G30-cfs0_000_113.bin
 /usr/share/klippy-env/lib/python3.9/site-packages/aenum-3.1.0.dist-info/INSTALLER
 /usr/share/klipper/config/printer-tronxy-x5sa-pro-2020.cfg
 /usr/share/klipper/klippy/stepper.pyc
@@ -904,7 +907,6 @@
 /usr/share/klipper/klippy/extras/box.py
 /usr/share/klipper/klippy/kinematics/winch.py
 /usr/share/klipper/scripts/install-ubuntu-18.04.sh
-/usr/share/klipper/fw/F008/motor/mot0_023_C30-mot2_002_071.bin
 /usr/share/klipper/klippy/extras/bus.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pkg_resources/_vendor/packaging/requirements.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/setuptools/command/test.pyc
@@ -942,6 +944,7 @@
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/commands/install.py
 /usr/share/klippy-env/lib/python3.9/site-packages/setuptools/command/__init__.pyc
 /usr/share/klipper/docs/img/delta-a-distance.jpg
+/usr/share/klipper/fw/cfs/cfs0_050_G30-cfs0_000_122.bin
 /usr/share/klipper/klippy/extras/statistics_ext.pyc
 /usr/share/klippy-env/bin/pip3.9
 /usr/share/klipper/docs/Command_Templates.md
@@ -991,7 +994,6 @@
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/commands/completion.py
 /usr/share/klipper/klippy/gcode.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/html5lib/_utils.py
-/usr/share/klipper/fw/cfs/cfs0_050_G32-cfs0_000_113.bin
 /usr/share/klipper/klippy/extras/serial_485.py
 /usr/share/klipper/config/generic-fysetc-s6-v2.cfg
 /usr/share/klipper/docs/prints/ringing_tower.stl
@@ -1027,6 +1029,7 @@
 /usr/share/klipper/config/printer-creality-ender5-2019.cfg
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/lockfile/sqlitelockfile.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/wheel/signatures/__init__.pyc
+/usr/share/klipper/config/PF027_CR0CN250701C10/gcode_macro.cfg
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/progress/helpers.pyc
 /usr/share/klipper/config/F025_CR0CN200400C10/sensorless.cfg
 /usr/share/klipper/klippy/chelper/kin_extruder.c
@@ -1044,6 +1047,7 @@
 /usr/share/klippy-env/lib/python3.9/orig-prefix.txt
 /usr/share/klippy-env/lib/python3.9/site-packages/pip-9.0.1.dist-info/WHEEL
 /usr/share/klipper/docs/img/skew_lengths.png
+/usr/share/klipper/fw/cfs/cfs0_050_G32-cfs0_000_122.bin
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/chardet/gb2312prober.pyc
 /usr/share/klipper/config/printer-creality-ender3-s1plus-2022.cfg
 /usr/share/klipper/klippy/extras/tmc_uart.pyc
@@ -1097,6 +1101,7 @@
 /usr/share/klipper/docs/img/zigzag.svg.png
 /usr/share/klipper/config/K1_MAX_SE_CR4CU220812S12/gcode_macro.cfg
 /usr/share/klipper/gcodes/GS_03/3DBenchy_PLA_34m1s.gcode
+/usr/share/klipper/config/PF027_CR0CN250701C10/factory_printer.cfg
 /usr/share/klipper/docs/Endstop_Phase.md
 /usr/share/klipper/docs/img/smoothed.svg
 /usr/share/klipper/klippy/extras/dotstar.py
@@ -1177,6 +1182,7 @@
 /usr/share/klipper/klippy/chelper/kin_delta.c
 /usr/share/klippy-env/lib/python3.9/site-packages/setuptools/extern/__init__.py
 /usr/share/klippy-env/lib/python3.9/site-packages/wheel/test/__init__.pyc
+/usr/share/klipper/fw/F008/mot2_022_C30-mot2_002_077.bin
 /usr/share/klipper/klippy/extras/input_shaper.py
 /usr/share/klipper/klippy/serialhdl.py
 /usr/share/klippy-env/lib/python3.9/site-packages/setuptools/command/register.pyc
@@ -1309,6 +1315,7 @@
 /usr/share/klipper/klippy/extras/__init__.pyc
 /usr/share/klipper/scripts/check-gcc.sh
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/urllib3/connection.py
+/usr/share/klipper/config/PF027_CR0CN250701C10/sensorless.cfg
 /usr/share/klipper/klippy/msgproto.py
 /usr/share/klippy-env/lib/python3.9/site-packages/pkg_resources/_vendor/packaging/utils.py
 /usr/share/klipper/klippy/extras/delayed_gcode.py
@@ -1500,6 +1507,7 @@
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/chardet/__init__.py
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/chardet/langhungarianmodel.py
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/vcs/bazaar.pyc
+/usr/share/klipper/fw/F008/motor/mot2_023_C30-mot2_002_077.bin
 /usr/share/klipper/fw/F008/noz0_130_G30-noz0_021_000.bin
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/distlib/resources.py
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/webencodings/mklabels.pyc
@@ -1605,6 +1613,7 @@
 /usr/share/klipper/klippy/extras/endstop_phase.pyc
 /usr/share/klipper/config/F008_CR0CN240319C13_1/printer_params.cfg
 /usr/share/klipper/config/printer-anycubic-kossel-2016.cfg
+/usr/share/klipper/fw/F008/mot1_022_C30-mot2_002_077.bin
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/models.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/webencodings/mklabels.py
 /usr/share/klipper/config/printer-creality-ender3-2018.cfg
@@ -1657,7 +1666,6 @@
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/urllib3/exceptions.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/html5lib/_trie/_base.py
 /usr/share/klipper/docs/img/delta-outer-distance.jpg
-/usr/share/klipper/fw/F008/mot2_022_C30-mot2_002_071.bin
 /usr/share/klipper/klippy/kinematics/deltesian.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/utils/encoding.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/wheel/test/simple.dist/setup.pyc
@@ -1725,6 +1733,7 @@
 /usr/share/klipper/scripts/buildcommands.py
 /usr/share/klipper/klippy/extras/heater_fan.py
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/vcs/__init__.py
+/usr/share/klipper/fw/F008/motor/mot0_021_C30-mot2_002_077.bin
 /usr/share/klipper/klippy/kinematics/hybrid_corexy.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/exceptions.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/chardet/codingstatemachine.pyc
