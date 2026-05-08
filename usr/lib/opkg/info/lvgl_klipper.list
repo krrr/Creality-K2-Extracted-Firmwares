@@ -28,6 +28,7 @@
 /etc/sysConfig/UIResource/K1/SortDownSelect.png
 /etc/sysConfig/UIResource/K1/img_fila_k2pro.png
 /usr/bin/audio-server
+/etc/sysConfig/UIResource/K1/img_ver_check_failed.png
 /etc/sysConfig/UIResource/K1/localexporttips.png
 /etc/sysConfig/UIResource/K1/img_humidity_arrow.png
 /usr/bin/Monitor
@@ -88,6 +89,7 @@
 /usr/bin/burn-server
 /etc/sysConfig/UIResource/K1/ui_img_dir_down.png
 /etc/sysConfig/UIResource/K1/SortIcon.png
+/etc/sysConfig/UIResource/K1/img_version_check_success.png
 /etc/sysConfig/UIResource/K1/img_boot0_K2.png
 /etc/sysConfig/UIResource/K1/zoffset_Sub_Disable.png
 /etc/sysConfig/UIResource/K1/objectStateCancle.png

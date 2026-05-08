@@ -462,7 +462,7 @@ Installed-Time: 1765422527
 Auto-Installed: yes
 
 Package: base-files
-Version: 4-r0-119d66228
+Version: 4-r0-e528d77ee
 Depends: libc, librt, libpthread, netifd, procd, jsonfilter, fstools, fwtool
 Status: install user installed
 Architecture: arm_cortex-a7_neon
@@ -714,8 +714,8 @@ Architecture: arm_cortex-a7_neon
 Installed-Time: 1765422527
 
 Package: libcxcloud
-Version: fce7c66
-Depends: libc, librt, libpthread, libfmtlog, aliyun-oss-cpp-sdk, libapr, libaprutil, libopenssl1.1, libcurl4, libjson-c5, jsoncpp, mxml, paho-mqtt-c, libstdcpp6, libuuid1, libpng, libqrencode, aliyun-oss-c-sdk, aliyun-vod-sdk
+Version: a670946
+Depends: libc, librt, libpthread, libcrlog, aliyun-oss-cpp-sdk, libapr, libaprutil, libopenssl1.1, libcurl4, libjson-c5, jsoncpp, mxml, paho-mqtt-c, libstdcpp6, libuuid1, libpng, libqrencode, aliyun-oss-c-sdk, aliyun-vod-sdk
 Status: install user installed
 Architecture: arm_cortex-a7_neon
 Installed-Time: 1765422527
@@ -1324,7 +1324,6 @@ Depends: libc, librt, libpthread, libstdcpp6
 Status: install user installed
 Architecture: arm_cortex-a7_neon
 Installed-Time: 1765422527
-Auto-Installed: yes
 
 Package: python-streaming-form-data
 Version: 1.8.1-1
@@ -1397,7 +1396,7 @@ Installed-Time: 1765422527
 
 Package: libdelivery
 Version: 5630e05
-Depends: libc, librt, libpthread, libfmtlog, libstdcpp6
+Depends: libc, librt, libpthread, libcrlog, libstdcpp6
 Status: install user installed
 Architecture: arm_cortex-a7_neon
 Installed-Time: 1765422527
@@ -1749,7 +1748,7 @@ Installed-Time: 1765422527
 Auto-Installed: yes
 
 Package: klipper
-Version: 6b9f4f8
+Version: b56d16a
 Depends: libc, librt, libpthread, python3, python3-setuptools, calc_psd
 Status: install user installed
 Architecture: arm_cortex-a7_neon
@@ -1835,7 +1834,7 @@ Architecture: arm_cortex-a7_neon
 Installed-Time: 1765422527
 
 Package: lvgl_klipper
-Version: e62f027
+Version: 7e29f6c
 Depends: libc, librt, libpthread, libfmtlog, aliyun-oss-cpp-sdk, libapr, libaprutil, libatomic1, libffmpeg-full, libblobmsg-json20210516, libopenssl1.1, libcurl4, libfreetype, libhv, libinotifytools, libjpeg, libjson-c5, jsoncpp, mxml, libpng, paho-mqtt-c, libprotobuf-c, libqrencode, libstdcpp6, libubox20210516, libubus20210630, libuuid1, wifimanager-v2.0-lib, libcxcloud
 Status: install user installed
 Architecture: arm_cortex-a7_neon
