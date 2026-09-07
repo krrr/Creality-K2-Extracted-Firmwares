@@ -1319,6 +1319,7 @@
 /usr/share/klipper/klippy/extras/bl24c16f.py
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/packaging/utils.py
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.pyc
+/usr/share/klipper/fw/cfs/cfs6_100_G31-cfs6_220_000.bin
 /usr/share/klipper/test/klippy/z_tilt.cfg
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/chardet/cp949prober.pyc
 /usr/share/klipper/config/generic-fysetc-cheetah-v1.2.cfg
@@ -1363,6 +1364,7 @@
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/chardet/jpcntx.pyc
 /usr/share/klipper/config/F008_CR0CN240319C13_1/gcode_macro.cfg
 /usr/share/klipper/config/GS_01_CR4CU220812S12/sensorless.cfg
+/usr/share/klipper/fw/cfs/cfs0_050_G30-cfs0_000_150.bin
 /usr/share/klipper/gcodes/F008/3DBenchy_PLA_34m1s.gcode
 /usr/share/klippy-env/lib/python3.9/site-packages/pkg_resources/_vendor/packaging/__about__.pyc
 /usr/share/klipper/config/Z2_CR0CN200400C10/box.cfg
@@ -1510,6 +1512,7 @@
 /usr/share/klipper/docs/CANBUS_protocol.md
 /usr/share/klipper/docs/img/bedmesh_faulty_regions.svg
 /usr/share/klipper/klippy/extras/manual_stepper.py
+/usr/share/klipper/fw/cfs/cfs0_050_G32-cfs0_000_150.bin
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/adapters.pyc
 /usr/share/klipper/config/generic-mightyboard.cfg
 /usr/share/klipper/klippy/queuelogger.pyc
@@ -1562,7 +1565,6 @@
 /usr/share/klipper/test/configs/samd21g18.config
 /usr/share/klipper/config/GS_01_CR4CU220812S12/gcode_macro.cfg
 /usr/share/klipper/config/F012_CR0CN200400C10/factory_printer.cfg
-/usr/share/klipper/fw/cfs/cfs0_050_G30-cfs0_000_142.bin
 /usr/share/klipper/test/klippy/linuxtest.cfg
 /usr/share/klipper/config/F008_CR0CN240319C13/printer_params.cfg
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/utils/ui.py
@@ -1683,7 +1685,6 @@
 /usr/share/klipper/docs/TSL1401CL_Filament_Width_Sensor.md
 /usr/share/klippy-env/lib/python3.9/_bootlocale.pyc
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/commands/completion.pyc
-/usr/share/klipper/fw/cfs/cfs0_050_G32-cfs0_000_142.bin
 /usr/share/klippy-env/lib/python3.9/site-packages/pip/_vendor/requests/packages/urllib3/_collections.py
 /usr/share/klipper/config/printer-anycubic-kossel-plus-2017.cfg
 /usr/share/klipper/klippy/chelper/itersolve.c

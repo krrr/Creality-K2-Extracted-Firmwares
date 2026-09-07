@@ -268,41 +268,46 @@ fw_info_check()
 
 set_graphic_cut_info()
 {
-    need_set_param=0
+    local video_dev=$1
+    local line target_x target_y target_w target_h
+    local cut_x cut_y cut_w cut_h
 
-    if [ "$MODEL" = "F021" ] && [[ "$manufactory" == "CCX1F4013" || "$manufactory" == "CCX2F4013" ]]; then
-        # 运行命令，抓取包含数字的行
-        line=$(cam_util -i /dev/video0 get_cut_param | grep get_graphic_cut_param)
-
-        log_echo "$line"
-
-        # 使用正则提取四个数字（x y w h）
-        set -- $(echo "$line" | grep -oE '[0-9]+')
-
-        # 依次赋值
-        target_x=$1
-        target_y=$2
-        target_w=$3
-        target_h=$4
-
-        if [ "$GRAPHIC_CUT_CENTER_X" -eq "$target_x" ] &&
-        [ "$GRAPHIC_CUT_CENTER_Y" -eq "$target_y" ] &&
-        [ "$GRAPHIC_CUT_WIDTH" -eq "$target_w" ] &&
-        [ "$GRAPHIC_CUT_HEIGHT" -eq "$target_h" ]; then
-            need_set_param=0  # 匹配
-        else
-            need_set_param=1  # 不匹配
-        fi
-
-        if [ "$need_set_param" -eq 0 ]; then
-            log_echo "cut param all match target, not need to set"
-        else
-            cam_util -i /dev/v4l/by-id/$1 set_cut_param $GRAPHIC_CUT_CENTER_X $GRAPHIC_CUT_CENTER_Y \
-                $GRAPHIC_CUT_WIDTH $GRAPHIC_CUT_HEIGHT
-            log_echo "model: $MODEL, set_cut_param $GRAPHIC_CUT_CENTER_X $GRAPHIC_CUT_CENTER_Y \
-                $GRAPHIC_CUT_WIDTH $GRAPHIC_CUT_HEIGHT"
-        fi 
+    if [ "$MODEL" = "F021" ] && { [ "$manufactory" = "CCX1F4013" ] || [ "$manufactory" = "CCX2F4013" ]; }; then
+        cut_x=$GRAPHIC_CUT_CENTER_X
+        cut_y=$GRAPHIC_CUT_CENTER_Y
+        cut_w=$GRAPHIC_CUT_WIDTH
+        cut_h=$GRAPHIC_CUT_HEIGHT
+    elif [ "$MODEL" = "F021" ] && [ "$manufactory" = "STD-8126V2" ]; then
+        cut_x=650
+        cut_y=405
+        cut_w=1060
+        cut_h=630
+    elif [ "$MODEL" = "F012" ] && [ "$manufactory" = "STD-8126V2" ]; then
+        cut_x=680
+        cut_y=405
+        cut_w=1120
+        cut_h=630   
+    else
+        return 0
     fi
+
+    line=$(cam_util -i /dev/video0 get_cut_param | grep get_graphic_cut_param)
+    log_echo "$line"
+
+    set -- $(echo "$line" | grep -oE '[0-9]+')
+    target_x=$1
+    target_y=$2
+    target_w=$3
+    target_h=$4
+
+    if [ "$cut_x" -eq "$target_x" ] && [ "$cut_y" -eq "$target_y" ] &&
+       [ "$cut_w" -eq "$target_w" ] && [ "$cut_h" -eq "$target_h" ]; then
+        log_echo "cut param all match target, not need to set"
+        return 0
+    fi
+
+    cam_util -i /dev/v4l/by-id/$video_dev set_cut_param $cut_x $cut_y $cut_w $cut_h
+    log_echo "model: $MODEL, manufactory: $manufactory, set_cut_param $cut_x $cut_y $cut_w $cut_h"
 }
 
 start_uvc()
