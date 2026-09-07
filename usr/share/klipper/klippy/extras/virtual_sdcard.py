@@ -1248,6 +1248,7 @@ class VirtualSD:
     # Background work timer
     def work_handler(self, eventtime):
         logging.info("work_handler start print, filename:%s" % self.current_file.name)
+        self.gcode.run_script_from_command("CLEAR_PAUSE")
         # self.print_stats.note_start()
         self.count_line = 0
         self.count_G1 = 0 
@@ -1302,7 +1303,15 @@ class VirtualSD:
         self.last_layer = self.layer
         while not self.must_pause_work:
             if self.is_continue_print and not self.restore_print_timer:
-                # 断电续打恢复
+                # 检查是否被取消，如果被取消则不执行恢复操作
+                try:
+                    self.gcode.check_cancel_running()
+                except self.gcode.cancel_error as e:
+                    self.is_continue_print = False
+                    self.restore_print_timer = None
+                    logging.warning("should be canceled, skip restore print")
+                    continue
+                # 断电续打恢复：只有在未被取消时才注册定时器
                 self.restore_print_timer = self.reactor.register_timer(self.restore_print, self.reactor.NOW)
             if self.restore_print_timer:
                 self.reactor.pause(self.reactor.monotonic() + 0.5)
@@ -1347,7 +1356,7 @@ class VirtualSD:
                 continue
             # Pause if any other request is pending in the gcode class
             if gcode_mutex.test():
-                self.reactor.pause(self.reactor.monotonic() + 0.100)
+                self.reactor.pause(self.reactor.monotonic() + 0.050)
                 continue
             # Dispatch command
             self.cmd_from_sd = True

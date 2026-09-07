@@ -37,6 +37,12 @@ set_hostname_with_model_mac()
             "F025")
                 model="M300"
                 ;;
+            "GS-04")
+                model="GS04"
+                ;;
+            "Z2")
+                model="Z2"
+                ;;
             *)
                 ;;
         esac

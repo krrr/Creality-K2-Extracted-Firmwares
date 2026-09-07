@@ -6,9 +6,11 @@
 /etc/sysConfig/UIResource/K1/lock.png
 /etc/sysConfig/UIResource/K1/state_normal.png
 /etc/sysConfig/UIResource/K1_Max/img_humidity.png
+/etc/sysConfig/UIResource/K1/img_spool_holder_Z2.png
 /etc/sysConfig/UIResource/K1/zoffset_Add_Normal.png
 /etc/sysConfig/UIResource/K1/selfchecking_1.png
 /etc/sysConfig/UIResource/K1/img_test_tip_k2_machine.png
+/etc/sysConfig/UIResource/K1/img_Z2_machine.png
 /etc/sysConfig/UIResource/K1/multicolor_box_k2pro.png
 /etc/sysConfig/UIResource/K1/belt_install_left_tool.png
 /etc/sysConfig/UIResource/K1/img_cfs_humidity_normal.png
@@ -18,6 +20,7 @@
 /etc/sysConfig/UIResource/K1/img_new_account_mask.png
 /etc/sysConfig/UIResource/K1/NotVisible.png
 /etc/sysConfig/UIResource/K1_Max/K2_Checktips.png
+/etc/sysConfig/UIResource/K1/img_auto_drying.png
 /etc/sysConfig/UIResource/K1/SortDownUnSelect.png
 /etc/sysConfig/UIResource/K1/excluceObjectIcon.png
 /etc/sysConfig/UIResource/K1/errorTips.png
@@ -28,10 +31,12 @@
 /etc/sysConfig/UIResource/K1/SortDownSelect.png
 /etc/sysConfig/UIResource/K1/img_fila_k2pro.png
 /usr/bin/audio-server
+/etc/sysConfig/UIResource/K1/img_test_tip_Z2_machine.png
 /etc/sysConfig/UIResource/K1/img_ver_check_failed.png
 /etc/sysConfig/UIResource/K1/localexporttips.png
 /etc/sysConfig/UIResource/K1/img_humidity_arrow.png
 /usr/bin/Monitor
+/etc/sysConfig/UIResource/K1/img_test_tip_GS04_machine.png
 /etc/sysConfig/UIResource/K1/belt_uninstall_right_tool.png
 /etc/sysConfig/UIResource/K1/switch_axis_test_step_dir.png
 /etc/init.d/app
@@ -55,6 +60,7 @@
 /etc/sysConfig/UIResource/K1/usedtimeicon.png
 /etc/sysConfig/defData/cert/server.key
 /etc/sysConfig/UIResource/K1/img_fila_k2_s1.png
+/etc/sysConfig/defData/material/GS-04_material_database.json
 /etc/sysConfig/UIResource/K1/TilteLeftstyle.png
 /etc/sysConfig/UIResource/K1/img_clean_nozzle_dir.png
 /etc/sysConfig/UIResource/K1/Subtract.png
@@ -72,6 +78,7 @@
 /etc/sysConfig/UIResource/K1/img_k2plus_machine.png
 /etc/sysConfig/UIResource/K1_Max/img_vector_1120.png
 /etc/sysConfig/UIResource/K1/K1_CheckTips.png
+/etc/sysConfig/defData/material/Z2_material_database.json
 /etc/sysConfig/UIResource/K1/fila_used_1.png
 /etc/sysConfig/UIResource/K1/EstateOut.png
 /etc/sysConfig/UIResource/K1/belt_dir.png
@@ -83,6 +90,7 @@
 /etc/sysConfig/defData/line_width_height.gcode
 /etc/sysConfig/UIResource/K1/zoffset_Add_Disable.png
 /etc/sysConfig/UIResource/K1/gcode_weight_flag.png
+/etc/sysConfig/UIResource/K1/img_GS04_machine.png
 /etc/sysConfig/UIResource/K1/layers.png
 /etc/sysConfig/audio/chinese/1.sound_button_crisp.wav
 /etc/sysConfig/UIResource/K1/img_new_pause.png
@@ -93,6 +101,7 @@
 /etc/sysConfig/UIResource/K1/img_boot0_K2.png
 /etc/sysConfig/UIResource/K1/zoffset_Sub_Disable.png
 /etc/sysConfig/UIResource/K1/objectStateCancle.png
+/etc/sysConfig/UIResource/K1/img_spool_holder_GS04.png
 /etc/sysConfig/UIResource/K1/objectStatePrinting.png
 /etc/sysConfig/UIResource/K1/nuzzle.png
 /etc/sysConfig/UIResource/K1/multicolor_box_k2.png

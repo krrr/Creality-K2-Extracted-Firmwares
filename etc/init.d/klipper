@@ -150,6 +150,26 @@ copy_config()
             gcode_dir=F025
             ;;
 
+        "GS-04")
+            if [ "$board" = "CR0CN200400C10" ]; then
+                config_dir=GS_04_CR0CN200400C10
+            else
+                config_dir=
+            fi
+
+            gcode_dir=GS_04
+            ;;
+
+        "Z2")
+            if [ "$board" = "CR0CN200400C10" ]; then
+                config_dir=Z2_CR0CN200400C10
+            else
+                config_dir=
+            fi
+
+            gcode_dir=Z2
+            ;;
+
         *)
             config_dir=
             gcode_dir=
